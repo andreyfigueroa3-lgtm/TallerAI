@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de IA - Tecnológico de Costa Rica</title>
+    
+    <!-- Fuentes para estética tecnológica/ciberseguridad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos Globales -->
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         SECCIÓN: ENCABEZADO
+         ========================================== -->
+    <header class="main-header">
+        <div class="title-container">
+            <h1>Taller de IA</h1>
+            <h2>Tecnológico de Costa Rica</h2>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         SECCIÓN: CUERPO PRINCIPAL
+         ========================================== -->
+    <main class="main-content">
+        <div class="button-container">
+            
+            <!-- Botón 1: Fundamentos de IA -->
+            <button class="tech-btn" onclick="window.open('fundamentos.pdf', '_blank')">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Fundamentos de IA</span>
+            </button>
+            
+            <!-- Botón 2: ¿Qué nos hace humanos? -->
+            <button class="tech-btn" onclick="document.getElementById('video-modal').style.display='flex'">
+                <i class="fa-solid fa-video"></i>
+                <span>¿Qué nos hace humanos?</span>
+            </button>
+            
+            <!-- Botón 3: Mapa del Tesoro -->
+            <button class="tech-btn" onclick="window.location.href='mapa.html'">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Mapa del Tesoro</span>
+            </button>
+            
+            <!-- Botón 4: Material para reforzar -->
+            <button class="tech-btn" id="btn-material">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Material para reforzar</span>
+            </button>
+
+            <!-- Panel deslizable tipo acordeón -->
+            <div class="material-panel-wrapper" id="panel-material">
+                <div class="material-panel">
+                    <div class="material-grid">
+                        <a href="prompt-engineer.pdf" target="_blank" class="material-box" style="text-decoration:none;">Prompt Engineer</a>
+                        <a href="https://www.youtube.com/watch?v=_tA5cinv0U8" target="_blank" class="material-box" style="text-decoration:none;">¿Qué es la IA? (Derivando)</a>
+                        <a href="https://arena.ai" target="_blank" class="material-box" style="text-decoration:none;">Arena AI</a>
+                        <a href="https://notebooklm.google" target="_blank" class="material-box" style="text-decoration:none;">Notebook LM</a>
+                        <a href="https://teachablemachine.withgoogle.com/?utm_source=chatgpt.com" target="_blank" class="material-box" style="text-decoration:none;">Teachable Machine</a>
+                        <a href="https://canva.link/20eyj78esg29b0q" target="_blank" class="material-box" style="text-decoration:none;">Presentación de Canva</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ==========================================
+         SECCIÓN: PIE DE PÁGINA
+         ========================================== -->
+    <footer class="main-footer">
+        <p>Desarrollado por:</p>
+        <p>Andrey Figueroa &middot; Gustavo Corrales &middot; Nazareth Muñoz<br>
+        Ariel Rodríguez &middot; Mariangel Monge &middot; Rachell Rojas</p>
+    </footer>
+
+    <!-- Modal de Video Embebido -->
+    <div id="video-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+        <div style="position:relative; width:90%; max-width:800px; aspect-ratio:16/9;">
+            <button onclick="document.getElementById('video-modal').style.display='none'" style="position:absolute; top:-40px; right:0; background:none; border:none; color:white; font-size:2rem; cursor:pointer;">&times;</button>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3yENuj0CCr0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Script de la aplicación -->
+    <script src="app.js"></script>
+</body>
+</html>
