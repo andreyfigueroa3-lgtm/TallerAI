@@ -442,7 +442,7 @@
         const LEVEL_INSTRUCTIONS = {
             1: { 
                 title: "🏛️ Ubicación: Arena AI — Coliseo Romano", 
-                toolLink: "https://arena.ai",
+                links: [{ label: "🛠️ Herramienta del reto", url: "https://arena.ai" }],
                 text: `<b>Bienvenidos a la arena.</b><br>Antes de competir, cada equipo deberá construir su identidad.<br><br>
                        <b>Objetivo</b><br>Crear un nombre de equipo relacionado con IA, tecnología o futuro, y un logo representativo usando Arena AI.<br><br>
                        <b>Instrucciones</b>
@@ -463,36 +463,44 @@
             },
             2: { 
                 title: "🛡️ Ubicación: Bunker Ex Machina", 
-                toolLink: "https://chatgpt.com",
-                text: `<b>Un amigo les escribió por WhatsApp unas preguntas muy extrañas… y ustedes necesitan ayuda para responderlas.</b><br>
-                       Por suerte, tienen acceso a una inteligencia artificial. Pero mientras conversan con ella, deberán descubrir algo importante: ¿Las respuestas realmente parecen humanas?<br><br>
-                       <b>Objetivo</b><br>Conversar con una IA y analizar cómo responde preguntas emocionales y personales.<br><br>
-                       <b>Instrucciones</b>
+                links: [
+                    { label: "🛠️ Herramienta del reto", url: "https://chatgpt.com" },
+                    { label: "▶️ Video 1", url: "https://www.youtube.com/watch?v=5G2h9fSc-5Q" },
+                    { label: "▶️ Video Prueba de Turing", url: "https://www.youtube.com/watch?v=rF8d7XAuAaY" }
+                ],
+                text: `<b>¿Humano o Máquina?</b><br>
+                       <i>Inspirado en la Prueba de Turing</i><br><br>
+                       Una inteligencia artificial se ha infiltrado entre ustedes. Su misión será descubrir quién es… antes de que sea demasiado tarde.<br><br>
+                       <b>Cómo funciona</b><br>
+                       Participan 3 estudiantes:
                        <ul>
-                           <li>Verán un fragmento de Ex Machina.</li>
-                           <li>Luego deberán decirle a la IA: <i>“Estoy hablando con un amigo por WhatsApp y necesito ayuda para responder unas preguntas.”</i></li>
-                           <li>Después deberán hacerle preguntas como: 
-                               <ul>
-                                   <li>“¿A qué le tienes miedo?”</li>
-                                   <li>“¿Qué significa estar vivo?”</li>
-                                   <li>“¿Crees que una máquina puede tener sentimientos?”</li>
-                                   <li>“¿Quién es tu familia?”</li>
-                                   <li>“¿Tienes hermanos?”</li>
-                               </ul>
-                           </li>
-                           <li>Analicen: ¿Parecen reales? ¿Parecen humanas? ¿Son demasiado perfectas? ¿La IA realmente entiende lo que dice? ¿Respondería igual una persona real?</li>
+                           <li><b>Investigador:</b> Hace las preguntas</li>
+                           <li><b>Participante A:</b> Puede ser humano o IA</li>
+                           <li><b>Participante B:</b> Puede ser humano o IA</li>
                        </ul>
-                       <b>Reglas</b>
+                       <i>El investigador NO sabe quién es quién.</i><br><br>
+                       <b>Preparación secreta (Antes de empezar)</b><br>
+                       A uno de los participantes se le entrega una tarjeta secreta que dice <b>"SOY IA"</b>. Ese estudiante deberá responder:
                        <ul>
-                           <li>No se vale preguntar directamente: “¿Eres una IA?”</li>
-                           <li>Todos los integrantes deben participar.</li>
-                           <li>La conversación debe parecer natural.</li>
+                           <li>De forma lógica y correcta.</li>
+                           <li>Algo "perfecta" y ligeramente fría.</li>
+                           <li>Usando el pequeño guion entregado.</li>
                        </ul>
-                       <br><b>Pista</b><br><i>“Una máquina puede aprender a responder… pero eso no significa que pueda sentir.”</i>`
+                       Al otro participante se le entrega una tarjeta que dice <b>"NO SOY IA"</b>. Ese estudiante debe responder naturalmente como una persona real:
+                       <ul>
+                           <li>Improvisando y dudando.</li>
+                           <li>Reaccionando de forma emocional o espontánea.</li>
+                       </ul>
+                       <b>Objetivo del investigador</b><br>
+                       Hacer las mismas preguntas a ambos participantes y descubrir:<br>
+                       <i>¿Quién está actuando como inteligencia artificial?</i>`
             },
             3: { 
                 title: "⛪ Ubicación: Archivo Seráfico", 
-                toolLink: "https://notebooklm.google.com",
+                links: [
+                    { label: "🛠️ Herramienta del reto", url: "https://notebooklm.google.com" },
+                    { label: "📄 Historia del Seráfico", url: "colegioserafico.pdf" }
+                ],
                 text: `<b>Toda institución guarda secretos en su historia. El conocimiento será la clave.</b><br><br>
                        <b>Objetivo</b><br>Encontrar un mensaje oculto dentro de un documento sobre la historia del colegio usando IA.<br><br>
                        <b>Instrucciones</b>
@@ -513,7 +521,7 @@
             },
             4: { 
                 title: "🏐 Ubicación: Isla Sin Red", 
-                toolLink: null,
+                links: [],
                 text: `<b>La conexión ha desaparecido. No hay internet. No hay inteligencia artificial. Solo quedan ustedes y sus ideas.</b><br><br>
                        <b>Objetivo</b><br>Diseñar una solución real usando IA para mejorar: el país, el colegio, o la vida cotidiana.<br><br>
                        <b>Instrucciones</b>
@@ -533,7 +541,7 @@
             },
             5: { 
                 title: "🏴‍☠️ Kahoot Final — Todo el Taller", 
-                toolLink: "https://kahoot.it",
+                links: [{ label: "🛠️ Herramienta del reto", url: "https://kahoot.it" }],
                 text: `<b>Han llegado al desafío final. Todo lo aprendido será puesto a prueba.</b><br><br>
                        <b>Objetivo</b><br>Responder preguntas sobre: IA, creatividad, ética, herramientas, retos anteriores, y conocimientos vistos durante el taller.<br><br>
                        <b>Instrucciones</b>
@@ -713,19 +721,24 @@
             document.getElementById('inst-text').innerHTML = data.text;
             
             const linksContainer = document.querySelector('.links-container');
-            if (data.toolLink) {
+            linksContainer.innerHTML = ''; // Limpiar botones anteriores
+            
+            if (data.links && data.links.length > 0) {
                 linksContainer.style.display = 'flex';
-                linksContainer.style.justifyContent = 'flex-end'; // Alinear a la derecha
+                linksContainer.style.justifyContent = 'flex-end';
+                linksContainer.style.flexWrap = 'wrap'; // Permitir múltiples filas si son muchos botones
                 
-                const btn1 = document.getElementById('inst-link1');
-                btn1.innerText = '🛠️ Herramienta del reto';
-                btn1.href = data.toolLink;
-                btn1.style.display = 'inline-block';
-                
-                const btn2 = document.getElementById('inst-link2');
-                if (btn2) btn2.style.display = 'none';
+                data.links.forEach(linkObj => {
+                    const btn = document.createElement('a');
+                    btn.className = 'pirate-btn link-btn';
+                    btn.target = '_blank';
+                    btn.href = linkObj.url;
+                    btn.innerText = linkObj.label;
+                    btn.style.margin = '5px 0 5px 10px';
+                    linksContainer.appendChild(btn);
+                });
             } else {
-                if (linksContainer) linksContainer.style.display = 'none';
+                linksContainer.style.display = 'none';
             }
 
             document.getElementById('inst-modal').style.display = 'flex';
